@@ -1,8 +1,6 @@
 'use strict';
 
-const keys = document.querySelectorAll('.key');
-
-function playKey(e) {
+function playSound(e) {
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"`);
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
   if (!audio) {
@@ -21,5 +19,7 @@ function removeTransition(e) {
   this.classList.remove('playing');
 }
 
-window.addEventListener('keydown', playKey);
+const keys = document.querySelectorAll('.key');
 keys.forEach((key) => key.addEventListener('transitionend', removeTransition));
+
+window.addEventListener('keydown', playSound);

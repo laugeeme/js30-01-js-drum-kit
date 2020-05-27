@@ -1,3 +1,4 @@
+﻿![](https://javascript30.com/images/JS3-social-share.png)
 # #JAVASCRIPT30
 
 ## 30 DAY VANILLA JAVASCRIPT CODING CHALLENGE.
